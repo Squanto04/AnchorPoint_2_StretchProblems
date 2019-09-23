@@ -20,8 +20,23 @@
  */
 import Foundation
 
+let currentYear = 2019
 
+struct Person {
+    let firstName: String
+    let lastName: String
+    let yearOfBirth: Int
+    var age: Int {
+        get {
+            return currentYear - yearOfBirth }
+        set {
+            age}
+        }
+}
 
+let newPerson = Person(firstName: "John", lastName: "Doe", yearOfBirth: 1990)
+
+print(newPerson.age)
 
 
 //: [Protocols](@next)
